@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# generated vector db
+legal-data/vectra-index
+
+# optional: ignore local PDFs if too large
+# legal-data/**/*.pdf
+
+# local database / generated files
+*.db
+*.sqlite
+
+# logs
+*.log

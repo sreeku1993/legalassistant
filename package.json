@@ -6,12 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ingest": "tsx scripts/ingest.ts",
+    "test:embeddings": "tsx scripts/test-embeddings.ts",
+    "test:faiss": "tsx scripts/test-faiss.ts",
+    "test:retrieval": "tsx scripts/test-retrieval.ts",
+    "test:llm": "tsx scripts/test-llm.ts",
+    "test:rag": "tsx scripts/test-rag.ts",
+    "test:vectra": "tsx scripts/test-vectra.ts"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@langchain/community": "^1.1.28",
+    "@langchain/core": "^1.1.47",
+    "@langchain/google-genai": "^2.1.31",
+    "@langchain/textsplitters": "^1.0.1",
+    "@xenova/transformers": "^2.17.2",
+    "dotenv": "^16.4.5",
+    "langchain": "^1.4.1",
     "next": "16.2.6",
+    "pdf-parse": "^2.4.5",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "vectra": "^0.14.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -22,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
+    "tsx": "^4.22.3",
     "typescript": "^5"
   }
 }
