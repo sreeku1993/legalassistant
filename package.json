@@ -9,11 +9,11 @@
     "lint": "eslint",
     "ingest": "tsx scripts/ingest.ts",
     "test:embeddings": "tsx scripts/test-embeddings.ts",
-    "test:faiss": "tsx scripts/test-faiss.ts",
     "test:retrieval": "tsx scripts/test-retrieval.ts",
     "test:llm": "tsx scripts/test-llm.ts",
     "test:rag": "tsx scripts/test-rag.ts",
-    "test:vectra": "tsx scripts/test-vectra.ts"
+    "test:vectra": "tsx scripts/test-vectra.ts",
+    "evaluate": "tsx scripts/evaluate.ts"
   },
   "dependencies": {
     "@huggingface/transformers": "^3.8.1",
@@ -25,6 +25,7 @@
     "dotenv": "^16.4.5",
     "langchain": "^1.4.1",
     "next": "16.2.6",
+    "onnxruntime-node": "^1.26.0",
     "pdf-parse": "^2.4.5",
     "react": "19.2.4",
     "react-dom": "19.2.4",
